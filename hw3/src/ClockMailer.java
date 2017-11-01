@@ -1,14 +1,13 @@
-import com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException;
-import sun.plugin2.message.transport.Transport;
-
-import javax.jms.Message;
-import javax.jms.Session;
-import javax.mail.*;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Properties;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 
 interface IClock
 {
