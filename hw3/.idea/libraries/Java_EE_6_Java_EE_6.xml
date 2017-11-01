@@ -10,8 +10,10 @@
       <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/" />
+      <root url="file://$USER_HOME$/Documents/Downloads/javax.mail-1.5.0.jar" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/Documents/Downloads/javax.mail-1.5.0.jar" recursive="false" />
   </library>
 </component>
