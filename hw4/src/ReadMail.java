@@ -29,13 +29,33 @@ public class ReadMail implements IReadMail {
         properties.put("mail.pop3.starttls.enable", "true");
         Session emailSession = Session.getDefaultInstance(properties);
 
-        Store store = emailSession.getStore("pop3s");
+        Store store = null;
+        try {
+            store = emailSession.getStore("pop3s");
+        } catch (NoSuchProviderException e) {
+            e.printStackTrace();
+        }
 
         store.connect(pop3Host, user, password);
 
-        Folder emailFolder = store.getFolder("INBOX");
-        emailFolder.open(Folder.READ_ONLY);
-        Message[] messages = emailFolder.getMessages();
+        Folder emailFolder = null;
+        try {
+            emailFolder = store.getFolder("INBOX");
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+        assert emailFolder != null;
+        try {
+            emailFolder.open(Folder.READ_ONLY);
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
+        Message[] messages = new Message[0];
+        try {
+            messages = emailFolder.getMessages();
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
         EmailMessage[] contents = new EmailMessage[messages.length];
 
         for (int i = 0; i < messages.length; i++) {
