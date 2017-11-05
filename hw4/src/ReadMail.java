@@ -21,7 +21,7 @@ import javax.mail.Session;
 import javax.mail.Store;
 
 public class ReadMail implements IReadMail {
-    public EmailMessage[] readMail() {
+    public EmailMessage[] readMail() throws MessagingException {
         Properties properties = new Properties();
         properties.put("mail.store.protocol", "pop3");
         properties.put("mail.pop3.host", "pop.gmail.com");
@@ -64,7 +64,17 @@ public class ReadMail implements IReadMail {
 
         for (int i = 0; i < messages.length; i++) {
             Message message = messages[i];
-
+            Address[] from = message.getFrom();
+            String subject = message.getSubject();
+            Date dateRecieved = message.getReceivedDate();
+            String text = "";
+            try {
+                text = message.getContent().toString();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            contents[i] = new EmailMessage(subject,from,text,dateRecieved);
         }
+        return contents;
     }
 }

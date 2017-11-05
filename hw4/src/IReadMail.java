@@ -1,3 +1,5 @@
+import javax.mail.MessagingException;
+
 interface IReadMail {
-    public EmailMessage[] readMail();
+    public EmailMessage[] readMail() throws MessagingException;
 }
