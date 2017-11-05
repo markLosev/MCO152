@@ -1,3 +1,3 @@
-public interface IReadMail {
+interface IReadMail {
     public EmailMessage[] readMail();
 }
