@@ -1,9 +1,7 @@
 
 import java.io.IOException;
-
 import java.util.Date;
 import java.util.Properties;
-
 import javax.mail.Address;
 import javax.mail.Folder;
 import javax.mail.Message;
