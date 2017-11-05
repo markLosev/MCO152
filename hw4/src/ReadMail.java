@@ -24,7 +24,7 @@ public class ReadMail implements IReadMail {
     public EmailMessage[] readMail() {
         Properties properties = new Properties();
         properties.put("mail.store.protocol", "pop3");
-        properties.put("mail.pop3.host", pop3Host);
+        properties.put("mail.pop3.host", "pop.gmail.com");
         properties.put("mail.pop3.port", "995");
         properties.put("mail.pop3.starttls.enable", "true");
         Session emailSession = Session.getDefaultInstance(properties);
@@ -36,7 +36,11 @@ public class ReadMail implements IReadMail {
             e.printStackTrace();
         }
 
-        store.connect(pop3Host, user, password);
+        try {
+            store.connect("pop.gmail.com", "dependencyinjectionhw@gmail.com", "Moshe123");
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
 
         Folder emailFolder = null;
         try {
