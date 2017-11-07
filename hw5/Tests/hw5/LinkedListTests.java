@@ -19,6 +19,21 @@ public class LinkedListTests {
 
     }
 
+    /*Contains Method*/
+    @Test
+    public void returnsTrueIfContainsElement() {
+
+        list.add(number);
+        assertTrue(list.contains(number));
+    }
+
+    @Test
+    public void returnsFalseIfDoesntContainsElement() {
+
+        list.add(1);
+        assertFalse(list.contains(10));
+    }
+
     /*Add Method*/
     @Test
     public void wasElementAddedToEndOfList() {
@@ -320,7 +335,8 @@ public class LinkedListTests {
         assertEquals(0, list.size());
     }
 
-    @Test void addElementToTheSpecifiedIndex() {
+    @Test
+    public void addElementToTheSpecifiedIndex() {
         list.add(1);
         list.add(2);
         list.add(3);
@@ -349,7 +365,6 @@ public class LinkedListTests {
         assertTrue(list.isEmpty());
     }
 
-    /*isEmpty Method*/
 
 
 
