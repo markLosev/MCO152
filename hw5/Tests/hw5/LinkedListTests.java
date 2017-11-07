@@ -320,7 +320,7 @@ public class LinkedListTests {
         assertEquals(0, list.size());
     }
 
-    @Test void addElementToTheSpecifiedIndex() {
+    @Test public void addElementToTheSpecifiedIndex() {
         list.add(1);
         list.add(2);
         list.add(3);
@@ -349,8 +349,17 @@ public class LinkedListTests {
         assertTrue(list.isEmpty());
     }
 
-    /*isEmpty Method*/
+
+    @Test
+    public void getElementAtSpecifiedIndex() {
+        list.add(1);
+        list.add(2);
+
+        int specified = list.get(0);
+
+        assertEquals(1, specified);
 
 
+    }
 
 }
