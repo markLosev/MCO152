@@ -313,9 +313,10 @@ public class LinkedListTests {
 
         list.add(0, 5);
 
-        assertEquals(5, list.get(0));
+        assertEquals(Integer.MAX_VALUE, list.size());
         System.out.println("hi");
     }
+
     /*isEmpty Method*/
     @Test
     public void isEmptyShouldReturnFalse() {
@@ -333,5 +334,9 @@ public class LinkedListTests {
 
         assertTrue(list.isEmpty());
     }
+
+    /*isEmpty Method*/
+
+
 
 }
