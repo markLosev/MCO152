@@ -306,4 +306,22 @@ public class LinkedListTests {
         assertEquals(0, list.size());
     }
 
+    /*isEmpty Method*/
+    @Test
+    public void isEmptyShouldReturnFalse() {
+
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        list.add(7);
+
+        assertFalse(list.isEmpty());
+    }
+
+    @Test
+    public void isEmptyShouldReturnTrue() {
+
+        assertTrue(list.isEmpty());
+    }
+
 }
