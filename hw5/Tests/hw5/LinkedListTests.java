@@ -314,6 +314,7 @@ public class LinkedListTests {
         list.add(0, 5);
 
         assertEquals(5, list.get(0));
+        System.out.println("hi");
     }
     /*isEmpty Method*/
     @Test
