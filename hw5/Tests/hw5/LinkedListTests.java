@@ -288,4 +288,22 @@ public class LinkedListTests {
         assertFalse(list.contains(7));
     }
 
+    /*Size Method*/
+    @Test
+    public void sizeOfListIsEqualToAmountOfElementsInList() {
+
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        list.add(7);
+
+        assertEquals(4, list.size());
+    }
+
+    @Test
+    public void sizeOfListIsEqualToZero() {
+
+        assertEquals(0, list.size());
+    }
+
 }
