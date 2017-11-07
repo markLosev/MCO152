@@ -300,6 +300,20 @@ public class LinkedListTests {
         assertEquals(4, list.size());
     }
 
+    //This test took me forever to run, and I never got to the end... Probably not the best way to do it.
+/*    @Test
+    public void sizeOfListShouldEqualIntegerMaxValueEvenThoughItHasMoreElements() {
+
+        for (int i = 0; i < Integer.MAX_VALUE ; i++) {
+            list.add(number);
+        }
+*//*        System.out.println(list.size());
+        list.add(number);
+        System.out.println(list.size());*//*
+
+        assertEquals(Integer.MAX_VALUE, list.size());
+    }*/
+
     @Test
     public void sizeOfListIsEqualToZero() {
 
