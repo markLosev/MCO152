@@ -306,6 +306,15 @@ public class LinkedListTests {
         assertEquals(0, list.size());
     }
 
+    @Test void addElementToTheSpecifiedIndex() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        list.add(0, 5);
+
+        assertEquals(5, list.get(0));
+    }
     /*isEmpty Method*/
     @Test
     public void isEmptyShouldReturnFalse() {
