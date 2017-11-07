@@ -306,15 +306,19 @@ public class LinkedListTests {
         assertEquals(0, list.size());
     }
 
-    @Test void addElementToTheSpecifiedIndex() {
-        list.add(1);
-        list.add(2);
-        list.add(3);
+    @Test
+    public void sizeOfListShouldEqualIntegerMaxValueEvenThoughItHasMoreElements() {
 
-        list.add(0, 5);
+        for (int i = 0; i < Integer.MAX_VALUE ; i++) {
+            list.add(number);
+        }
+        System.out.println(list.size());
+        list.add(number);
+        System.out.println(list.size());
 
-        assertEquals(5, list.get(0));
+        assertEquals(Integer.MAX_VALUE, list.size());
     }
+
     /*isEmpty Method*/
     @Test
     public void isEmptyShouldReturnFalse() {
@@ -332,5 +336,9 @@ public class LinkedListTests {
 
         assertTrue(list.isEmpty());
     }
+
+    /*isEmpty Method*/
+
+
 
 }
