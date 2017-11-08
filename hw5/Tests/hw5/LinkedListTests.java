@@ -3,10 +3,8 @@ package hw5;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.lang.reflect.Array;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -506,4 +504,42 @@ public class LinkedListTests {
         list.subList(0,4);
     }
 
+    //toArray
+    @Test
+    public void testThatMethodReturnsAnArray() {
+
+        Object array = list.toArray();
+
+        assertTrue( array.getClass().isArray());
+    }
+
+
+    @Test
+    public void testThatMethodReturnsAnArrayWithAllElementsInGivenArray() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        Integer [] array = new Integer[5];
+
+        Integer[] newList = list.toArray(array);
+
+        assertTrue( newList[0] == 1);
+        assertTrue( newList[1] == 2);
+        assertTrue( newList[2] == 3);
+    }
+
+    @Test
+    public void testThatMethodReturnsAnArrayWithAllElementsInGivenArrayAndLastIndexIsNull() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        Integer [] array = new Integer[5];
+
+        Integer[] newList = list.toArray(array);
+
+        assertTrue( newList[0] == 1);
+        assertTrue( newList[1] == 2);
+        assertTrue( newList[2] == 3);
+        assertTrue( newList[3] == null);
+    }
 }
