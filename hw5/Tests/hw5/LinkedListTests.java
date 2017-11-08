@@ -3,7 +3,10 @@ package hw5;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
 
 import static org.junit.Assert.*;
 
@@ -334,16 +337,15 @@ public class LinkedListTests {
 
         assertEquals(0, list.size());
     }
-
-    @Test void addElementToTheSpecifiedIndex() {
+    /*add (index)*/
+    @Test public void addElementToTheSpecifiedIndex() {
         list.add(1);
         list.add(2);
         list.add(3);
 
         list.add(0, 5);
 
-        assertEquals(Integer.MAX_VALUE, list.size());
-        System.out.println("hi");
+        assertEquals( (Integer) 5, (Integer) list.get(0));
     }
 
     /*isEmpty Method*/
@@ -364,8 +366,144 @@ public class LinkedListTests {
         assertTrue(list.isEmpty());
     }
 
-    /*isEmpty Method*/
+    // get method
 
+    @Test public void getElementAtSpecifiedIndex() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
 
+        int specified = list.get(0);
+
+        assertEquals(1, specified);
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void throwIndexOutOfBoundsExceptionWhenIndexIsNotInTheLinkedList() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        list.get(3);
+    }
+
+    // Set method
+    @Test
+    public void replaceElementInSpecifiedIndexWithGivenElement() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        list.set(0, 5);
+
+        assertEquals( (Integer) 5, list.get(0));
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void throwIndexOutOfBoundsExceptionWhenIndexToSetNumberIsNotInTheLinkedList() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        list.set(3 ,5);
+    }
+
+    //LastIndexOf
+
+    @Test
+    public void returnTheLastOccurenceOfGivenNumber() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(1);
+
+        int last = list.lastIndexOf(1);
+
+        assertEquals( (Integer) 3,(Integer) last);
+    }
+
+    @Test
+    public void returnNegativeOneWhenGivenNumberIsNotInList() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(1);
+
+        int last = list.lastIndexOf(10);
+
+        assertEquals(-1, last);
+    }
+
+    //ListIterator
+    @Test
+    public void objectReturnedShouldBeOfSubclassOfListIteratorInterface() {
+
+        assertTrue(list.listIterator() instanceof ListIterator);
+    }
+
+    @Test
+    public void ListIteratorNextMethodShouldReturnElementAtSpecifiedIndex() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(1);
+        ListIterator iterator = list.listIterator(2);
+
+        assertEquals((Integer) 3, (Integer) iterator.next());
+    }
+
+    @Test
+    public void ListIteratorPrevioustMethodShouldReturnElementOneBelowSpecifiedIndex() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(1);
+        ListIterator iterator = list.listIterator(2);
+
+        assertEquals((Integer) 2, (Integer) iterator.previous());
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void throwIndexOutOfBoundsExceptionWhenIndexForIteratorIsNotInTheLinkedList() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        list.listIterator(5);
+    }
+
+    //subList
+    @Test
+    public void testThatAllElementsInSubListAreInMainList() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(1);
+
+        List subList = list.subList(1,3);
+
+        assertTrue(list.containsAll(subList));
+    }
+
+    @Test
+    public void testThatSubListIsEmptyWhenStartAndEndIndexAreTheSame() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(1);
+
+        List subList = list.subList(0,0);
+
+        assertTrue(subList.isEmpty());
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void throwIndexOutOfBoundsExceptionWhenEndIndexForSubListIsNotInTheLinkedList() {
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        list.subList(0,4);
+    }
 
 }
