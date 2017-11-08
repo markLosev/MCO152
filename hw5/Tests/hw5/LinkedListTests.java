@@ -335,15 +335,17 @@ public class LinkedListTests {
 
         assertEquals(0, list.size());
     }
+
     /*add (index)*/
-    @Test public void addElementToTheSpecifiedIndex() {
+    @Test
+    public void addElementToTheSpecifiedIndex() {
         list.add(1);
         list.add(2);
         list.add(3);
 
         list.add(0, 5);
 
-        assertEquals( (Integer) 5, (Integer) list.get(0));
+        assertEquals((Integer) 5, (Integer) list.get(0));
     }
 
     /*isEmpty Method*/
@@ -366,7 +368,8 @@ public class LinkedListTests {
 
     // get method
 
-    @Test public void getElementAtSpecifiedIndex() {
+    @Test
+    public void getElementAtSpecifiedIndex() {
         list.add(1);
         list.add(2);
         list.add(3);
@@ -394,7 +397,7 @@ public class LinkedListTests {
 
         list.set(0, 5);
 
-        assertEquals( (Integer) 5, list.get(0));
+        assertEquals((Integer) 5, list.get(0));
     }
 
     @Test(expected = IndexOutOfBoundsException.class)
@@ -403,7 +406,7 @@ public class LinkedListTests {
         list.add(2);
         list.add(3);
 
-        list.set(3 ,5);
+        list.set(3, 5);
     }
 
     //LastIndexOf
@@ -417,7 +420,7 @@ public class LinkedListTests {
 
         int last = list.lastIndexOf(1);
 
-        assertEquals( (Integer) 3,(Integer) last);
+        assertEquals((Integer) 3, (Integer) last);
     }
 
     @Test
@@ -478,7 +481,7 @@ public class LinkedListTests {
         list.add(3);
         list.add(1);
 
-        List subList = list.subList(1,3);
+        List subList = list.subList(1, 3);
 
         assertTrue(list.containsAll(subList));
     }
@@ -490,7 +493,7 @@ public class LinkedListTests {
         list.add(3);
         list.add(1);
 
-        List subList = list.subList(0,0);
+        List subList = list.subList(0, 0);
 
         assertTrue(subList.isEmpty());
     }
@@ -501,7 +504,7 @@ public class LinkedListTests {
         list.add(2);
         list.add(3);
 
-        list.subList(0,4);
+        list.subList(0, 4);
     }
 
     //toArray
@@ -510,7 +513,7 @@ public class LinkedListTests {
 
         Object array = list.toArray();
 
-        assertTrue( array.getClass().isArray());
+        assertTrue(array.getClass().isArray());
     }
 
 
@@ -519,13 +522,13 @@ public class LinkedListTests {
         list.add(1);
         list.add(2);
         list.add(3);
-        Integer [] array = new Integer[5];
+        Integer[] array = new Integer[5];
 
         Integer[] newList = list.toArray(array);
 
-        assertTrue( newList[0] == 1);
-        assertTrue( newList[1] == 2);
-        assertTrue( newList[2] == 3);
+        assertTrue(newList[0] == 1);
+        assertTrue(newList[1] == 2);
+        assertTrue(newList[2] == 3);
     }
 
     @Test
@@ -533,14 +536,14 @@ public class LinkedListTests {
         list.add(1);
         list.add(2);
         list.add(3);
-        Integer [] array = new Integer[5];
+        Integer[] array = new Integer[5];
 
         Integer[] newList = list.toArray(array);
 
-        assertTrue( newList[0] == 1);
-        assertTrue( newList[1] == 2);
-        assertTrue( newList[2] == 3);
-        assertTrue( newList[3] == null);
+        assertTrue(newList[0] == 1);
+        assertTrue(newList[1] == 2);
+        assertTrue(newList[2] == 3);
+        assertTrue(newList[3] == null);
     }
 
     public class SecondSetOfTests {
@@ -561,7 +564,7 @@ public class LinkedListTests {
 
             list.add(number);
             list.clear();
-            assertEquals(0,list.size());
+            assertEquals(0, list.size());
         }
 
         /*Equals Method*/
@@ -621,7 +624,7 @@ public class LinkedListTests {
             list.add(5);
             list.add(6);
 
-            assertEquals(1,list.indexOf(5));
+            assertEquals(1, list.indexOf(5));
         }
 
         @Test
@@ -631,7 +634,7 @@ public class LinkedListTests {
             list.add(5);
             list.add(6);
 
-            assertEquals(-1,list.indexOf(7));
+            assertEquals(-1, list.indexOf(7));
         }
 
         /*Iterator Method*/
@@ -643,3 +646,4 @@ public class LinkedListTests {
 
 
     }
+}
