@@ -2,11 +2,12 @@ package src.MessageSender;
 
 import src.EmailMessage;
 import src.ReadMail;
-
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 interface IMailer

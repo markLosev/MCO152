@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9c62881-4693-4286-af32-9a5a448d22b8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/../hw6/src/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/../hw6/src/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/apache_log4j_2_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/hw7.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/src/EmailMessage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/src/IReadMail.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/src/ReadMail.java" />
-      <change beforePath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../hw3/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../hw4/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../hw4/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/hw7.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java" afterPath="$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,9 +52,11 @@
       <file leaf-file-name="MessageMailer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="78" column="64" lean-forward="false" selection-start-line="78" selection-start-column="64" selection-end-line="78" selection-end-column="64" />
-              <folding />
+            <state relative-caret-position="252">
+              <caret line="18" column="59" lean-forward="true" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -283,12 +272,20 @@
       <updated>1513570619341</updated>
       <workItem from="1513570622726" duration="675000" />
       <workItem from="1513571908368" duration="22000" />
-      <workItem from="1513617326435" duration="3103000" />
+      <workItem from="1513617326435" duration="3342000" />
     </task>
+    <task id="LOCAL-00001" summary="connected h3 and h4 together.">
+      <created>1513620522507</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1513620522507</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3800000" />
+    <option name="totallyTimeSpent" value="4039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
@@ -328,6 +325,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="connected h3 and h4 together." />
+    <option name="LAST_COMMIT_MESSAGE" value="connected h3 and h4 together." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -363,9 +364,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="78" column="64" lean-forward="false" selection-start-line="78" selection-start-column="64" selection-end-line="78" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="252">
+          <caret line="18" column="59" lean-forward="true" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
