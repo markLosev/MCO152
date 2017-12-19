@@ -71,7 +71,7 @@ public class ReadMail implements IReadMail {
             }
             contents[i] = new EmailMessage(subject,from,text,dateRecieved);
         }
-        logger.trace("leabing readMail()");
+        logger.trace("leaving readMail()");
         return contents;
     }
 }

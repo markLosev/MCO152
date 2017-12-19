@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9c62881-4693-4286-af32-9a5a448d22b8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/apache_log4j_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_activation.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/log4j.properties" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/apache_log4j_2_10.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/hw7.iml" afterPath="$PROJECT_DIR$/hw7.iml" />
-      <change beforePath="$PROJECT_DIR$/src/src/EmailMessage.java" afterPath="$PROJECT_DIR$/src/src/EmailMessage.java" />
-      <change beforePath="$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java" afterPath="$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java" />
       <change beforePath="$PROJECT_DIR$/src/src/ReadMail.java" afterPath="$PROJECT_DIR$/src/src/ReadMail.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,10 +15,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MessageMailer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MessageMailer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="-448">
               <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding />
             </state>
@@ -35,7 +28,7 @@
       <file leaf-file-name="powertools.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/powertools.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
+            <state relative-caret-position="391">
               <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
               <folding />
             </state>
@@ -64,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadMail.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ReadMail.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/src/ReadMail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="24" lean-forward="false" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+            <state relative-caret-position="1095">
+              <caret line="73" column="26" lean-forward="false" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,9 +87,9 @@
         <option value="$PROJECT_DIR$/src/src/src/MessageMailer.java" />
         <option value="$PROJECT_DIR$/.idea/libraries/slf4j_1_7.xml" />
         <option value="$PROJECT_DIR$/src/src/EmailMessage.java" />
-        <option value="$PROJECT_DIR$/src/src/ReadMail.java" />
         <option value="$PROJECT_DIR$/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java" />
+        <option value="$PROJECT_DIR$/src/src/ReadMail.java" />
       </list>
     </option>
   </component>
@@ -340,7 +333,7 @@
       <workItem from="1513641152590" duration="313000" />
       <workItem from="1513656991944" duration="4041000" />
       <workItem from="1513708617332" duration="4652000" />
-      <workItem from="1513718967883" duration="3667000" />
+      <workItem from="1513718967883" duration="3778000" />
     </task>
     <task id="LOCAL-00001" summary="connected h3 and h4 together.">
       <created>1513620522507</created>
@@ -356,11 +349,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513620811242</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="program now forwards emails">
+      <created>1513726811064</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513726811065</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19218000" />
+    <option name="totallyTimeSpent" value="19329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="6" />
@@ -404,7 +404,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="connected h3 and h4 together." />
     <MESSAGE value="imported log4j" />
-    <option name="LAST_COMMIT_MESSAGE" value="imported log4j" />
+    <MESSAGE value="program now forwards emails" />
+    <option name="LAST_COMMIT_MESSAGE" value="program now forwards emails" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -443,6 +444,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -642,6 +644,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -734,16 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/ReadMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="24" lean-forward="false" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -760,19 +753,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/powertools.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
+        <state relative-caret-position="391">
           <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/src/MessageSender/MessageMailer.java">
+    <entry file="file://$PROJECT_DIR$/src/src/ReadMail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="1095">
+          <caret line="73" column="26" lean-forward="false" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
