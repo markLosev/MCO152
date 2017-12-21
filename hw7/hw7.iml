@@ -11,5 +11,6 @@
     <orderEntry type="library" name="javax.mail" level="project" />
     <orderEntry type="library" name="apache-log4j-1.2" level="project" />
     <orderEntry type="library" name="javax.activation" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1" level="project" />
   </component>
 </module>

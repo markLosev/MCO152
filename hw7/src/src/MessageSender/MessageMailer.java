@@ -9,6 +9,10 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
+import java.sql.*;
+import java.io.*;
+import java.util.*;
+
 
 interface IMailer
 {
@@ -86,7 +90,7 @@ public class MessageMailer {
         logger.trace("Leaving retrieveInboxMessages()");
     }
 
-    public static void main(String [] args) {
+    public static void main(String [] args)throws IOException,SQLException {
         PropertyConfigurator.configure("/Users/moshelosev/IdeaProjects/MCO 152/MCO152/hw7/resources/log4j.properties");
         IMailer mail = new Emailer();
         ReadMail reader = new ReadMail();
